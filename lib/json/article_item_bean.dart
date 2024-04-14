@@ -2,7 +2,7 @@ import 'package:new_web/config/all_configs.dart';
 
 import 'archive_item_bean.dart';
 
-class ArticleItemBean extends Comparable {
+class ArticleItemBean implements Comparable<ArticleItemBean> {
   ArticleItemBean({
     this.articleName,
     this.createTime,
@@ -97,8 +97,8 @@ class ArticleItemBean extends Comparable {
   }
 
   @override
-  int compareTo(other) {
-    return DateTime.parse(createTime!).isAfter(DateTime.parse(other.createTime))
+  int compareTo(ArticleItemBean other) {
+    return DateTime.parse(createTime!).isAfter(DateTime.parse(other.createTime!))
         ? -1
         : 1;
   }
