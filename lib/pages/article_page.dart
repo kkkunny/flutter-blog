@@ -194,10 +194,10 @@ MarkdownWidget buildMarkdownWidget(
           style: CTextStyle(
               fontSize: defaultFontSize, backgroundColor: const Color(0xffeff1f3))),
     ]),
-    markdownGeneratorConfig: MarkdownGeneratorConfig(
-        generators: [videoGeneratorWithTag, youtubeGenerator],
-        textGenerator: (node, config, visitor) =>
-            CustomTextNode(node.textContent, config, visitor)),
+    // markdownGeneratorConfig: MarkdownGeneratorConfig(
+    //     generators: [videoGeneratorWithTag, youtubeGenerator],
+    //     textGenerator: (node, config, visitor) =>
+    //         CustomTextNode(node.textContent, config, visitor)),
   );
 }
 

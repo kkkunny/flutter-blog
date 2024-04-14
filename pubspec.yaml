@@ -46,7 +46,7 @@ dev_dependencies:
   markdown_widget:
     git:
       url: https://github.com/asjqkkkk/markdown_widget.git
-      ref: br_pre_2.0
+      ref: v2.3.2
   scrollable_positioned_list: ^0.3.5
   html: ^0.15.0
   video_player: ^2.4.10
